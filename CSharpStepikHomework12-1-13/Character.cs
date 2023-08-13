@@ -13,8 +13,6 @@ namespace CSharpStepikHomework12_1_13
     public class Character
     {
         private int _healthPoints;
-        private int _manaPoints;
-
 
         public string CharacterType { get; }
         public int Strength { get; }
@@ -26,7 +24,7 @@ namespace CSharpStepikHomework12_1_13
         public int HealthPoints
         {
             get { return _healthPoints; }
-            set
+            private set
             {
                 if (value >= 0)
                 {
