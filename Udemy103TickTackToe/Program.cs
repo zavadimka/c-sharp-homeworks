@@ -29,7 +29,7 @@
             char nought = 'O';
             string nolikami = "ноликами";
 
-            string fullLine = "012345678";
+            string fullBoard = "012345678";
             string matchResult = null;
 
             bool isWin = false;
@@ -67,8 +67,6 @@
             }
             
 
-
-
             void PrintGameBoard()
             {
                 Console.WriteLine();
@@ -94,11 +92,12 @@
                 Console.WriteLine();
             }
 
+
             void MakeTurn(char thisTurnSymbol, string thisTurnValue)
             {
                 string position = " ";
 
-                while (!fullLine.Contains(position))
+                while (!fullBoard.Contains(position))
                 {
                     Console.Write($"Ход {thisTurnValue}. Введите номер поля: ");
                     position = Console.ReadLine();
@@ -144,7 +143,7 @@
                         break;
                 }
 
-                fullLine = fullLine.Remove(fullLine.IndexOf(position), 1);
+                fullBoard = fullBoard.Remove(fullBoard.IndexOf(position), 1);
             }
 
 
@@ -178,7 +177,7 @@
                     isWin = true;
                 }
 
-                if (!isWin && fullLine == "")
+                if (!isWin && fullBoard == "")
                 {
                     matchResult = "draw";
                 }
