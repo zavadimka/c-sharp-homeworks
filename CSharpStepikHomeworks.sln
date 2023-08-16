@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpStepikHomework12-1-13
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpStepikHomework12_1_12", "CSharpStepikHomework12_1_12\CSharpStepikHomework12_1_12.csproj", "{C221A1A8-5DFE-4B7B-B164-0491204F9758}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udemy101GuessTheNumber", "Udemy101GuessTheNumber\Udemy101GuessTheNumber.csproj", "{7DBC6A84-D099-4D2C-8702-0233544F2D1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy103TickTackToe", "Udemy103TickTackToe\Udemy103TickTackToe.csproj", "{7A06CE0C-E4C7-455E-8D51-732C27EF6C20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C221A1A8-5DFE-4B7B-B164-0491204F9758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C221A1A8-5DFE-4B7B-B164-0491204F9758}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C221A1A8-5DFE-4B7B-B164-0491204F9758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DBC6A84-D099-4D2C-8702-0233544F2D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBC6A84-D099-4D2C-8702-0233544F2D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBC6A84-D099-4D2C-8702-0233544F2D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBC6A84-D099-4D2C-8702-0233544F2D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A06CE0C-E4C7-455E-8D51-732C27EF6C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A06CE0C-E4C7-455E-8D51-732C27EF6C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A06CE0C-E4C7-455E-8D51-732C27EF6C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A06CE0C-E4C7-455E-8D51-732C27EF6C20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
