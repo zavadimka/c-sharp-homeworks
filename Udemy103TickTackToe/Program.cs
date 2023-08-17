@@ -64,6 +64,10 @@
                     Console.WriteLine("Ничья! Победила дружба!");
                     break;
                 }
+
+                Console.WriteLine();
+                Console.WriteLine("Чтобы закрыть окно, нажмите любую кнопку...");
+                Console.ReadLine();
             }
             
 

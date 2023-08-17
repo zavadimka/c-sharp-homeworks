@@ -8,6 +8,10 @@
 
             game.StartGame();
 
+            Console.WriteLine();
+            Console.WriteLine("Чтобы закрыть окно, нажмите любую кнопку...");
+            Console.ReadLine();
+
         }
     }
 }
