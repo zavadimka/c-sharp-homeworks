@@ -8,7 +8,7 @@
             Console.WriteLine("Вас приветствует игра \"Палочки\"!");
             Console.WriteLine($"На столе определённое палочек. Игроки по очереди убирают на выбор от 1 до 3 палочек");
             Console.WriteLine("Проигрывает игрок, который забирает последнюю палочку");
-            Console.WriteLine($"Вы можете начать игру с 10, 20, 30, 40 или 50 палочками на столе. Сколько вы выберете?");
+            Console.WriteLine($"Стартовое количество палочек должно быть не меньше 10 и не больше 50. Сколько вы выберете?");
             
             int NumberOfStarterSticks = int.Parse(Console.ReadLine());
             SticksGame game = new SticksGame(NumberOfStarterSticks);

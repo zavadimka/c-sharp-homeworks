@@ -20,9 +20,9 @@ namespace Udemy109SticksGame
 
         public SticksGame(int NumberOfStarterSticks = 10)
         {
-            if (NumberOfStarterSticks < 10 || NumberOfStarterSticks > 50 || NumberOfStarterSticks % 2 != 0)
+            if (NumberOfStarterSticks < 10 || NumberOfStarterSticks > 50) 
             {
-                throw new ArgumentException("Стартовое количество палочек должно быть между 10 и 50 включительно и кратно 10");
+                throw new ArgumentException("Стартовое количество палочек должно быть между 10 и 50 включительно");
             }
             this.NumberOfStarterSticks = NumberOfStarterSticks;
             NumberOfLeftSticks = NumberOfStarterSticks;
