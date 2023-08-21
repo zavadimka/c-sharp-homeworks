@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udemy101GuessTheNumber", "U
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udemy103TickTackToe", "Udemy103TickTackToe\Udemy103TickTackToe.csproj", "{7A06CE0C-E4C7-455E-8D51-732C27EF6C20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy105GallowsGame", "Udemy105GallowsGame\Udemy105GallowsGame.csproj", "{5468E2DC-E005-423F-999A-34DD3BBBDE3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udemy105GallowsGame", "Udemy105GallowsGame\Udemy105GallowsGame.csproj", "{5468E2DC-E005-423F-999A-34DD3BBBDE3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Udemy109SticksGame", "SticksGame\Udemy109SticksGame.csproj", "{0760F203-4DA2-4AF5-A022-0293F88CDBBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5468E2DC-E005-423F-999A-34DD3BBBDE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5468E2DC-E005-423F-999A-34DD3BBBDE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5468E2DC-E005-423F-999A-34DD3BBBDE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0760F203-4DA2-4AF5-A022-0293F88CDBBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0760F203-4DA2-4AF5-A022-0293F88CDBBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0760F203-4DA2-4AF5-A022-0293F88CDBBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0760F203-4DA2-4AF5-A022-0293F88CDBBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
