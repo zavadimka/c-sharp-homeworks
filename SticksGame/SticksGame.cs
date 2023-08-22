@@ -9,13 +9,12 @@ namespace Udemy109SticksGame
     public class SticksGame
     {
         public readonly int NumberOfStarterSticks;
-        private int LastHumanTurnSticksAmount;
 
         public int NumberOfLeftSticks { get; private set; }
         public GameStatus GameStatus { get; private set; } = GameStatus.NotStarted;
         public Players FirstPlayer { get; private set; }
+        public Players CurrentPlayer { get; private set; }
         private SticksAmount SticksAmount { get; set; }
-        public int TurnFlag { get; private set; }
 
 
         public SticksGame(int NumberOfStarterSticks = 10)
@@ -40,12 +39,12 @@ namespace Udemy109SticksGame
             if (firstTurn.Next(2) == 0)
             {
                 FirstPlayer = Players.Human;
-                TurnFlag = 0;
+                CurrentPlayer = FirstPlayer;
             }
             else
             {
                 FirstPlayer = Players.AI;
-                TurnFlag = 1;
+                CurrentPlayer = FirstPlayer;
             }
 
             GameStatus = GameStatus.InProgress;
@@ -75,36 +74,13 @@ namespace Udemy109SticksGame
                 throw new InvalidOperationException("Нет больше палочек. Игра должна быть закончена");
             }
 
-            if (FirstPlayer == Players.AI)
+            if ((NumberOfLeftSticks - 1) % ((int)SticksAmount.Three + 1) != 0)
             {
-                if ((NumberOfLeftSticks - 1) % ((int)SticksAmount.Three + 1) != 0)
-                {
-                    SticksAmount = (SticksAmount)((NumberOfLeftSticks - 1) % ((int)SticksAmount.Three + 1));
-                }
-                else
-                {
-                    SticksAmount = SticksAmount.Three;
-                }
+                SticksAmount = (SticksAmount)((NumberOfLeftSticks - 1) % ((int)SticksAmount.Three + 1));
             }
             else
             {
-                // если последняя взятка 3, то берем по 1, пока не возьмет меньше 3, чтобы можно было сравняться
-                // если не 3, тогда по первому обычному варианту
-                if (LastHumanTurnSticksAmount == 1 || LastHumanTurnSticksAmount == 2)
-                {
-                    if ((NumberOfLeftSticks - 1) % ((int)SticksAmount.Three + 1) != 0)
-                    {
-                        SticksAmount = (SticksAmount)((NumberOfLeftSticks - 1) % ((int)SticksAmount.Three + 1));
-                    }
-                    else
-                    {
-                        SticksAmount = SticksAmount.Three;
-                    }
-                }
-                else
-                {
-                    SticksAmount = SticksAmount.One;
-                }
+                SticksAmount = SticksAmount.One;
             }
 
             if (NumberOfLeftSticks < (int)SticksAmount)
@@ -115,7 +91,7 @@ namespace Udemy109SticksGame
             
             if (isLost())
             {
-                if (TurnFlag % 2 != 0)
+                if (CurrentPlayer == Players.AI)
                 {
                     GameStatus = GameStatus.Won;
                 }
@@ -126,7 +102,7 @@ namespace Udemy109SticksGame
             }
             else
             {
-                TurnFlag++;
+                CurrentPlayer = Players.Human;
             }
             
             return SticksAmount;
@@ -154,7 +130,7 @@ namespace Udemy109SticksGame
 
             if (isLost())
             {
-                if (TurnFlag % 2 == 0)
+                if (CurrentPlayer == Players.Human)
                 {
                     GameStatus = GameStatus.Lost;
                 }
@@ -165,7 +141,7 @@ namespace Udemy109SticksGame
             }
             else
             {
-                TurnFlag++;
+                CurrentPlayer = Players.AI;
             }
         }
     }

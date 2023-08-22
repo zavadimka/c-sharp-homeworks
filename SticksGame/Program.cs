@@ -37,7 +37,7 @@
             {
                 PrintSticks();
 
-                if (game.TurnFlag % 2 == 0)
+                if (game.CurrentPlayer == Players.Human)
                 {
                     
                     int sticksAmount;
