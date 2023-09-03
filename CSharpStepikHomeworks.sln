@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udemy109SticksGame", "Stick
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udemy117ParseChessPlayersCsv", "Udemy117ParseChessPlayersCsv\Udemy117ParseChessPlayersCsv.csproj", "{A8263008-4CCE-48C8-9724-198F441600B1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udemy119TrueOrFalseGame", "Udemy119TrueOrFalseGame\Udemy119TrueOrFalseGame.csproj", "{99B711CE-66B7-4469-A9FE-681F09E76CED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{A8263008-4CCE-48C8-9724-198F441600B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8263008-4CCE-48C8-9724-198F441600B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8263008-4CCE-48C8-9724-198F441600B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B711CE-66B7-4469-A9FE-681F09E76CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B711CE-66B7-4469-A9FE-681F09E76CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B711CE-66B7-4469-A9FE-681F09E76CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B711CE-66B7-4469-A9FE-681F09E76CED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
